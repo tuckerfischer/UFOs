@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFO Finder</title>
 
@@ -44,61 +45,43 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <form>
-                    <p>Filter Search</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <label for="date">Enter Date</label>
-                            <input type="text" name="datetime" placeholder="1/10/2010" id="datetime">
-                        </li>
-                        <li class="list-group-item">
-                            <label for="city">City</label>
-                            <input type="text" name="city" placeholder="Benton" id="city">
-                        </li>
-                        <li class="list-group-item">
-                            <label for="state">State</label>
-                            <input type="text" name="state" placeholder="ar" id="state">
-                        </li>
-                        <li class="list-group-item">
-                            <label for="country">Country</label>
-                            <input type="text" name="country" placeholder="us" id="country">
-                        </li>
-                        <li class="list-group-item">
-                            <label for="shape">Shape</label>
-                            <input type="text" name="shape" placeholder="circle" id="shape">
-                        </li>
-                        <br>
-                    </ul>
-                    <!-- <ul class="list-group">
-    
-                        <li class="list-group-item">
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                        </li>
-                    </ul> -->
-                </form>
+
             </div>
             <div class="col-md-9">
-                <table class="table table-striped">
-                    <thead>
-                      <tr>
-                          <th>Date</th>
-                          <th>City</th>
-                          <th>State</th>
-                          <th>Country</th>
-                          <th>Shape</th>
-                          <th>Duration</th>
-                          <th>Comments</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
+
             </div>
         </div>
     </div>
-       
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script>
+    <form>
+        <p>Filter Search</p>
+    </form>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <label for="date">Enter Date</label>
+            <input type="text" placeholder="1/10/2010" id="datetime">
+        </li>
+        <li class="list-group-item">
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+        </li>
+    </ul>
+    <div class="col-md-9">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+      <script src="static/js/data.js"></script>
+      <script src="static/js/app.js"></script>
 </body>
 </html>
